@@ -1,5 +1,5 @@
 # Ogee
-Ogee Arches is a package designed for the Arches platform that implements the Linked.art data model, provides a complete vocabulary to support that data model and is fully documented with reusable documentation.
+Ogee Arches is a package designed for the Arches platform that implements the Linked.art data model (as recorded on the web, December 2023), provides a complete vocabulary to support that data model and is fully documented with reusable documentation.
 
 Ogee Arches has been created by Getty Digital with the support of Takin.solutions. Its primary aim is to serve as a starter Arches package for projects aiming to use the Linked.art standard and wanting to adopt the Arches Platform. Ogee Arches takes the difficulty out of starting a Linked.art compatible data project using Arches by providing the complete set of models envisioned by Linked.art and setting them up in a ready to use fashion in the Arches Platform.
 
