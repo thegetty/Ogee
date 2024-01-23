@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+CRM Art and Architectural Historical Argumentation (CRM AAA) Conceptual Model RDF Serialization v0.9 (draft) encoded in RDFS
+
+This is the encoding genereated by George Bruseker  26/1/21 as the current version of the proposed extension for art and architectural historical research.
+Note that this is one derivative of the conceptual modelling proposed, an encoding derived from the conceptual model description CRM_AAA v0.9 
+
+Created by Takin.solutions Tuesday, January 26, 2021
+
+Encoding Rules:
+1. The RDF spelling rules do not allow blanks. Hence we have replaced them by underscores.
+   For instance "E63_Beginning_of_Existence" or "P2i_is_type_of".
+
+2. RDF does not allow to instantiate properties beginning from a range value.
+   Therefore, each CRM property is represented as two RDFS properties.
+   For instance "P2 has type (is type of)" is represented as:
+   "P2_has_type" for the domain to range direction and "P2i_is_type_of" for the range to domain direction.
+-->
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	 xml:base="https://takin.solutions/ontologies/CRMaaa/"> xml:lang="en">
+
+<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>    
+    
+<rdfs:Class rdf:about="ZE1_Institutional_Fact">
+	<rdfs:label xml:lang="en">Institutional Fact</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="ZE2_Appellative_Status">
+	<rdfs:label xml:lang="en">Appellative Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE3_Contact_Point_Status">
+	<rdfs:label xml:lang="en">Contact Point Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE2_Appellative_Status"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE4_Classificatory_Status">
+	<rdfs:label xml:lang="en">Classificatory Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE5_Function_Status">
+	<rdfs:label xml:lang="en">Function Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE4_Classificatory_Status"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE6_Social_Status">
+	<rdfs:label xml:lang="en">Social Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE4_Classificatory_Status"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE7_Custodial_Status">
+	<rdfs:label xml:lang="en">Custodial Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE30_Property_Right_Status"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE8_Ownership_Status">
+	<rdfs:label xml:lang="en">Ownership Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE30_Property_Right_Status"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE9_Residential_Status">
+	<rdfs:label xml:lang="en">Residential Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class> 
+<rdfs:Class rdf:about="ZE10_Family_Status">
+	<rdfs:label xml:lang="en">Family Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE11_Membership_Status">
+	<rdfs:label xml:lang="en">Membership Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>    
+<rdfs:Class rdf:about="ZE12_Referential_Status">
+	<rdfs:label xml:lang="en">Referential Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE13_Speech_Act">
+	<rdfs:label xml:lang="en">Speech Act</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE14_Similarity_Status">
+	<rdfs:label xml:lang="en">Similarity Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>  
+<rdfs:Class rdf:about="ZE15_Set_Status">
+	<rdfs:label xml:lang="en">Set Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class> 
+<rdfs:Class rdf:about="ZE16_Utterance_Event">
+	<rdfs:label xml:lang="en">Utterance Event</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+</rdfs:Class>     
+<rdfs:Class rdf:about="ZE17_Digital_Reading">
+	<rdfs:label xml:lang="en">Digital Reading</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event"/>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE18_Critical_Reading">
+	<rdfs:label xml:lang="en">Critical Reading</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMinf/I1_Argumentation"/>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE19_Naming">
+	<rdfs:label xml:lang="en">Naming</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>  
+<rdfs:Class rdf:about="ZE20_Declarative_Acquisition">
+	<rdfs:label xml:lang="en">Declarative Acquisition</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
+    <rdfs:subClassOf rdf:resource="ZE29_Transfer_of_Property_Right"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE21_Declarative_Transfer_of_Custody">
+	<rdfs:label xml:lang="en">Declarative Transfer of Custody</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
+    <rdfs:subClassOf rdf:resource="ZE29_Transfer_of_Property_Right"/>
+</rdfs:Class>    
+<rdfs:Class rdf:about="ZE22_Declarative_Joining">
+	<rdfs:label xml:lang="en">Declarative Joining</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E85_Joining"/>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE23_Declarative_Leaving">
+	<rdfs:label xml:lang="en">Declarative Leaving</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving"/>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE24_Notional_Set">
+	<rdfs:label xml:lang="en">Notional Set</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+</rdfs:Class>    
+<rdfs:Class rdf:about="ZE25_Dating_Status">
+	<rdfs:label xml:lang="en">Dating Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class> 
+<rdfs:Class rdf:about="ZE26_Dating_Declaration">
+	<rdfs:label xml:lang="en">Dating Declaration</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE27_Declaration_of_Obligation">
+	<rdfs:label xml:lang="en">Declaration of Obligation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE28_Obligation_Status">
+	<rdfs:label xml:lang="en">Obligation Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="ZE29_Transfer_of_Property_Right">
+	<rdfs:label xml:lang="en">Transfer of Property Right</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE13_Speech_Act"/>
+</rdfs:Class>   
+<rdfs:Class rdf:about="ZE30_Property_Right_Status">
+	<rdfs:label xml:lang="en">Property Right Status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="ZE1_Institutional_Fact"/>
+</rdfs:Class>
+    
+<rdf:Property rdf:about="ZP1_has_intentional_subject">
+    <rdfs:label xml:lang="en">has intentional subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP1i_is_intentional_subject_of">
+    <rdfs:label xml:lang="en">is intentional subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP2_ascribes_intentional_target">
+    <rdfs:label xml:lang="en">ascribes intentional target</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP2i_is_intentional_target_ascribed_by">
+    <rdfs:label xml:lang="en">is intentional target ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP3_ascribes_intentional_relation">
+    <rdfs:label xml:lang="en">ascribes intentional relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP3i_is_intentional_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is intentional relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP4_holds_for">
+    <rdfs:label xml:lang="en">holds for</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP4i_is_held_by">
+    <rdfs:label xml:lang="en">is held by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+</rdf:Property>  
+
+<rdf:Property rdf:about="ZP5_has_appellative_subject">
+    <rdfs:label xml:lang="en">has appellative subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE2_Appellative_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P5i_is_appellative_subject_of">
+    <rdfs:label xml:lang="en">is appellative subject of</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP6_ascribes_appellation">
+    <rdfs:label xml:lang="en">ascribes appellation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE2_Appellative_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP6i_is_appellation_ascribed_by">
+    <rdfs:label xml:lang="en">is appellation ascribed by</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+	<rdfs:range rdf:resource="ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP7_ascribes_appellative_relation">
+    <rdfs:label xml:lang="en">ascribes appellative relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE2_Appellative_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP7i_is_appellative_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is appellative relation ascribed by</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP8_has_contact_subject">
+    <rdfs:label xml:lang="en">has contact subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE3_Contact_Point_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP5_has_appellative_subject"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP8i_is_contact_subject_of">
+    <rdfs:label xml:lang="en">is contact subject of</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="P5i_is_appellative_subject_of"/>
+</rdf:Property>
+
+    <rdf:Property rdf:about="ZP9_ascribes_contact_point">
+    <rdfs:label xml:lang="en">ascribes contact point</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE3_Contact_Point_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    <rdfs:subPropertyOf rdf:resource="ZP6_ascribes_appellation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP9i_is_contact_point_ascribed_by">
+    <rdfs:label xml:lang="en">is contact ascribed by</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+	<rdfs:range rdf:resource="ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP6i_is_appellation_ascribed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP10_ascribes_contact_point_relation">
+    <rdfs:label xml:lang="en">ascribes contact point relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE3_Contact_Point_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP7_ascribes_appellative_relation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP10i_is_contact_point_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is contact point relation ascribed by</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP7i_is_appellative_relation_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP11_has_classificatory_subject">
+    <rdfs:label xml:lang="en">has classificatory subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE4_Classificatory_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP11i_is_classificatory_subject_of">
+    <rdfs:label xml:lang="en">is classificatory subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE4_Classificatory_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP12_ascribes_classification">
+    <rdfs:label xml:lang="en">ascribes classification</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE4_Classificatory_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP12i_is_classification_ascribed_by">
+    <rdfs:label xml:lang="en">is classification ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE4_Classificatory_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP13_ascribes_classification_relation">
+    <rdfs:label xml:lang="en">ascribes classification relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE4_Classificatory_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP13i_is_classification_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is classification relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE4_Classificatory_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>    
+
+<rdf:Property rdf:about="ZP14_has_function_subject">
+    <rdfs:label xml:lang="en">has functional subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE5_Function_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:subPropertyOf rdf:resource="ZP11_has_classificatory_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP14i_is_functional_subject_of">
+    <rdfs:label xml:lang="en">is functional subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+	<rdfs:range rdf:resource="ZE5_Function_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP11i_is_classificatory_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP15_ascribes_function">
+    <rdfs:label xml:lang="en">ascribes function</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE5_Function_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP12_ascribes_classification"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP15i_is_function_ascribed_by">
+    <rdfs:label xml:lang="en">is function ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE5_Function_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP12i_is_classification_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP16_ascribes_functional_relation">
+    <rdfs:label xml:lang="en">ascribes functional relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE5_Function_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP13_ascribes_classification_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP16i_is_functional_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is functional relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE5_Function_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP13i_is_classification_relation_ascribed_by"/>
+</rdf:Property> 
+<rdf:Property rdf:about="ZP17_has_social_status_subject">
+    <rdfs:label xml:lang="en">has social subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE6_Social_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP11_has_classificatory_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP17i_is_social_status_subject_of">
+    <rdfs:label xml:lang="en">is social subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE6_Social_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP11i_is_classificatory_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP18_ascribes_social_status">
+    <rdfs:label xml:lang="en">ascribes social status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE6_Social_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP12_ascribes_classification"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP18i_is_social_status_ascribed_by">
+    <rdfs:label xml:lang="en">is social status ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE6_Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP12i_is_classification_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP19_ascribes_social_status_relation">
+    <rdfs:label xml:lang="en">ascribes social status relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE6_Social_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>     
+    <rdfs:subPropertyOf rdf:resource="ZP13_ascribes_classification_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP19i_is_social_status_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is social status relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE6_Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP13i_is_classification_relation_ascribed_by"/>
+</rdf:Property>     
+<rdf:Property rdf:about="ZP20_has_custodial_subject">
+    <rdfs:label xml:lang="en">has custodial subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE7_Custodial_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object"/>
+    <rdfs:subPropertyOf rdf:resource="ZP64_has_property_right_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP20i_is_custodial_subject_of">
+    <rdfs:label xml:lang="en">is custodial subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object"/>
+	<rdfs:range rdf:resource="ZE7_Custodial_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP64i_is_property_right_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP21_ascribes_custodian">
+    <rdfs:label xml:lang="en">ascribes custodian</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE7_Custodial_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP65_ascribes_property_right_holder"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP21i_is_custodian_ascribed_by">
+    <rdfs:label xml:lang="en">is custodian ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE7_Custodial_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP65i_is_property_right_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP22_ascribes_custodial_relation">
+    <rdfs:label xml:lang="en">ascribes custodial relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE7_Custodial_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP66_ascribes_property_right_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP22i_is_custodial_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is custodial relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE7_Custodial_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP66i_is_property_right_relation_ascribed_by"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP23_has_ownership_subject">
+    <rdfs:label xml:lang="en">has ownership subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE8_Ownership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:subPropertyOf rdf:resource="ZP64_has_property_right_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP23i_is_ownership_subject_of">
+    <rdfs:label xml:lang="en">is ownership subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+	<rdfs:range rdf:resource="ZE8_Ownership_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP64i_is_property_right_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP24_ascribes_owner">
+    <rdfs:label xml:lang="en">ascribes owner</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE8_Ownership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP65_ascribes_property_right_holder"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP24i_is_owner_ascribed_by">
+    <rdfs:label xml:lang="en">is owner ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE8_Ownership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP65i_is_property_right_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP25_ascribes_ownership_relation">
+    <rdfs:label xml:lang="en">ascribes ownership relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE8_Ownership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>     
+    <rdfs:subPropertyOf rdf:resource="ZP66_ascribes_property_right_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP25i_is_ownership_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is ownership relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE8_Ownership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP66i_is_property_right_relation_ascribed_by"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP26_has_residence_subject">
+    <rdfs:label xml:lang="en">has residence subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE9_Residential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP26i_is_residence_subject_of">
+    <rdfs:label xml:lang="en">is residence subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE9_Residential_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP27_ascribes_residence_place">
+    <rdfs:label xml:lang="en">ascribes residence place</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE9_Residential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP27i_is_residence_place_ascribed_by">
+    <rdfs:label xml:lang="en">is residence place ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+	<rdfs:range rdf:resource="ZE9_Residential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP28_ascribes_residence_relation">
+    <rdfs:label xml:lang="en">ascribes residence relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE9_Residential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP28i_is_residence_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is residence relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE9_Residential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property> 
+
+<rdf:Property rdf:about="ZP29_has_familial_subject">
+    <rdfs:label xml:lang="en">has familial subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE10_Family_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP29i_is_familial_subject_of">
+    <rdfs:label xml:lang="en">is familial subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+	<rdfs:range rdf:resource="ZE10_Family_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP30_ascribes_relative">
+    <rdfs:label xml:lang="en">ascribes relative</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE10_Family_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP30i_is_relative_ascribed_by">
+    <rdfs:label xml:lang="en">is relative ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+	<rdfs:range rdf:resource="ZE10_Family_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP31_ascribes_familial_relation">
+    <rdfs:label xml:lang="en">ascribes familial relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE10_Family_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP31i_is_familial_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is familial relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE10_Family_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property> 
+<rdf:Property rdf:about="ZP32_has_membership_subject">
+    <rdfs:label xml:lang="en">has membership subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE11_Membership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP32i_is_membership_subject_of">
+    <rdfs:label xml:lang="en">is membership subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+	<rdfs:range rdf:resource="ZE11_Membership_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP33_ascribes_group">
+    <rdfs:label xml:lang="en">ascribes group</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE11_Membership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP33i_is_group_ascribed_by">
+    <rdfs:label xml:lang="en">is group ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+	<rdfs:range rdf:resource="ZE11_Membership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP34_ascribes_membership_relation">
+    <rdfs:label xml:lang="en">ascribes membership relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE11_Membership_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP34i_is_membership_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is membership relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE11_Membership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>        
+
+<rdf:Property rdf:about="ZP35_has_referential_subject">
+    <rdfs:label xml:lang="en">has referential subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE12_Referential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP35i_is_referential_subject_of">
+    <rdfs:label xml:lang="en">is referential subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+	<rdfs:range rdf:resource="ZE12_Referential_Status"/>   
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP36_ascribes_referent">
+    <rdfs:label xml:lang="en">ascribes referent</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE12_Referential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP36i_is_referent_ascribed_by">
+    <rdfs:label xml:lang="en">is referent ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE12_Referential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP37_ascribes_referential_relation">
+    <rdfs:label xml:lang="en">ascribes referential relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE12_Referential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>     
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP37i_is_referential_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is referential relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE12_Referential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>     
+    
+<rdf:Property rdf:about="ZP38_ascribes_referential_mode">
+    <rdfs:label xml:lang="en">ascribes referential mode</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE12_Referential_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP38i_is_relational_mode_ascribed_by">
+    <rdfs:label xml:lang="en">is referential mode ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE12_Referential_Status"/>
+</rdf:Property>
+ <rdf:Property rdf:about="ZP39_invoked">
+    <rdfs:label xml:lang="en">invoked</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP39i_was_invoked_by">
+    <rdfs:label xml:lang="en">was invoked by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP40_performed">
+    <rdfs:label xml:lang="en">performed</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP40i_was_performed_by">
+    <rdfs:label xml:lang="en">was performed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"/>
+</rdf:Property>    
+    
+<rdf:Property rdf:about="ZP41_uttered">
+    <rdfs:label xml:lang="en">uttered</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP41i_was_uttered_by">
+    <rdfs:label xml:lang="en">was uttered by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP42_intentionally_initiated">
+    <rdfs:label xml:lang="en">intentionally initiated</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O13_triggers"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP42i_was_intentionally_initiated_by">
+    <rdfs:label xml:lang="en">was intentionally initiated by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O13i_is_triggered_by"/>
+</rdf:Property>     
+
+<rdf:Property rdf:about="ZP43_has_similarity_subject">
+    <rdfs:label xml:lang="en">has similarity subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE14_Similarity_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP43i_is_similarity_subject_of">
+    <rdfs:label xml:lang="en">is similarity subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE14_Similarity_Status"/>   <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP44_ascribes_similarity_target">
+    <rdfs:label xml:lang="en">has similarity target</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE14_Similarity_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP44i_is_similarity_target_ascribed_by">
+    <rdfs:label xml:lang="en">is similarity target ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE14_Similarity_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP45_ascribes_similarity_relation">
+    <rdfs:label xml:lang="en">ascribes similarity relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE14_Similarity_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>     
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP45i_is_similarity_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is similarity relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE14_Similarity_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>     
+    
+<rdf:Property rdf:about="ZP46_ascribes_similarity_mode">
+    <rdfs:label xml:lang="en">ascribes similarity mode</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE14_Similarity_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP46i_is_similarity_mode_ascribed_by">
+    <rdfs:label xml:lang="en">is similarity mode ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE14_Similarity_Status"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP47_has_set_belonging_subject">
+    <rdfs:label xml:lang="en">has set belonging subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE15_Set_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP47i_is_subject_in_set_status_of">
+    <rdfs:label xml:lang="en">is subject in set status of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE15_Set_Status"/>   <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>    
+<rdf:Property rdf:about="ZP48_ascribes_set">
+    <rdfs:label xml:lang="en">ascribes set</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE15_Set_Status"/>
+	<rdfs:range rdf:resource="ZE24_Notional_Set"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP48i_is_set_ascribed_by">
+    <rdfs:label xml:lang="en">is set ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE24_Notional_Set"/>
+	<rdfs:range rdf:resource="ZE15_Set_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP49_ascribes_set_belonging_relation">
+    <rdfs:label xml:lang="en">ascribes set belonging relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE15_Set_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>     
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP49i_is_set_belonging_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is set belonging relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+	<rdfs:range rdf:resource="ZE15_Set_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>      
+    
+<rdf:Property rdf:about="ZP51_has_former_or_current_set_member">
+    <rdfs:label xml:lang="en">has former or current set member</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE24_Notional_Set"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP51i_is_current_or_former_set_member_of">
+    <rdfs:label xml:lang="en">is current or former set member of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	<rdfs:range rdf:resource="ZE24_Notional_Set"/>
+</rdf:Property>       
+<rdf:Property rdf:about="ZP52_intentionally_terminated">
+    <rdfs:label xml:lang="en">intentionally terminated</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="ZE1_Institutional_Fact"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMsci/O13_triggers"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP52i_was_intentionally_terminated_by">
+    <rdfs:label xml:lang="en">was intentionally terminated by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE1_Institutional_Fact"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMsci/O13i_is_triggered_by"/>
+</rdf:Property>  
+<rdf:Property rdf:about="ZP53_initiates_for">
+    <rdfs:label xml:lang="en">initiates for</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE13_Speech_Act"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP53i_had_institutional_fact_initiated_by">
+    <rdfs:label xml:lang="en">had institutional fact initiated by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+	<rdfs:range rdf:resource="ZE13_Speech_Act"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP54_ascribes_relative_date">
+    <rdfs:label xml:lang="en">ascribes relative date</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE25_Dating_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP54i_is_relative_date_ascribed_by">
+    <rdfs:label xml:lang="en">is relative date ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+	<rdfs:range rdf:resource="ZE25_Dating_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP55_has_dating_subject">
+    <rdfs:label xml:lang="en">has dating subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE25_Dating_Status"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP55i_is_dating_subject_of">
+    <rdfs:label xml:lang="en">is dating subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+	<rdfs:range rdf:resource="ZE25_Dating_Status"/>
+   <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP56_ascribes_dating_relation">
+    <rdfs:label xml:lang="en">ascribes dating relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE25_Dating_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP56i_is_dating_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is dating relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:range rdf:resource="ZE25_Dating_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP57_has_fiscal_obligation_subject">
+    <rdfs:label xml:lang="en">has fiscal obligation subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP57i_is_fiscal_obligation_subject_of">
+    <rdfs:label xml:lang="en">is fiscal obligation subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:range rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property> 
+<rdf:Property rdf:about="ZP58_ascribes_debtor">
+    <rdfs:label xml:lang="en">ascribes debtor</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP58i_is_debtor_ascribed_by">
+    <rdfs:label xml:lang="en">is debtor ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP59_ascribes_obligation_relation">
+    <rdfs:label xml:lang="en">ascribes obligation relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP59i_is_obligation_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is obligation relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:range rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP60_ascribes_debtee">
+    <rdfs:label xml:lang="en">ascribes debtee</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE28_Obligation_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP60i_is_debtee_ascribed_by">
+    <rdfs:label xml:lang="en">is debtee ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE28_Obligation_Status"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP61_transferred_property_right_to">
+    <rdfs:label xml:lang="en">transferred property right to</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P22_transferred_title_to">
+    <rdfs:subPropertyOf rdf:resource="ZP61_transferred_property_right_to"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by">
+    <rdfs:subPropertyOf rdf:resource="ZP61_transferred_property_right_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP61i_had_property_right_transferred_to_by">
+    <rdfs:label xml:lang="en">had property right transferred to by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P22i_acquired_title_through">
+    
+    <rdfs:subPropertyOf rdf:resource="ZP61i_had_property_right_transferred_to_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P29i_received_custody_through">
+<rdfs:subPropertyOf rdf:resource="ZP61i_had_property_right_transferred_to_by"/>    
+</rdf:Property>
+<rdf:Property rdf:about="ZP62_transferred_property_right_from">
+    <rdfs:label xml:lang="en">transferred property right from</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from">
+     <rdfs:subPropertyOf rdf:resource="ZP62_transferred_property_right_from"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by">
+    <rdfs:subPropertyOf rdf:resource="ZP62_transferred_property_right_from"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP62i_had_property_right_transferred_from_by">
+    <rdfs:label xml:lang="en">had property right transferred from by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P23i_surrendered_title_through">
+    <rdfs:subPropertyOf rdf:resource="ZP62i_had_property_right_transferred_from_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P28i_custody_surrendered_through">
+    <rdfs:subPropertyOf rdf:resource="ZP62i_had_property_right_transferred_from_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP63_transferred_property_right_over">
+    <rdfs:label xml:lang="en">transferred property right over</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_over">
+    
+    <rdfs:subPropertyOf rdf:resource="ZP63_transferred_property_right_over"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P30_transferred_custody_of">
+    
+    <rdfs:subPropertyOf rdf:resource="ZP63_transferred_property_right_over"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP63i_had_property_right_transferred_over_by">
+    <rdfs:label xml:lang="en">had property right transferred over by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:range rdf:resource="ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P24i_changed_ownership_through">
+    <rdfs:subPropertyOf rdf:resource="ZP63i_had_property_right_transferred_over_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P30i_custody_transeferred_through">
+
+    <rdfs:subPropertyOf rdf:resource="ZP63i_had_property_right_transferred_over_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP64_has_property_right_subject">
+    <rdfs:label xml:lang="en">has property right subject</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1_has_intentional_subject"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP64i_is_property_right_subject_of">
+    <rdfs:label xml:lang="en">is property right subject of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:range rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP1i_is_intentional_subject_of"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP65_ascribes_property_right_holder">
+    <rdfs:label xml:lang="en">ascribes property right holder</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2_ascribes_intentional_target"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP65i_is_property_right_target_ascribed_by">
+    <rdfs:label xml:lang="en">is property right target ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP2i_is_intentional_target_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP66_ascribes_property_right_relation">
+    <rdfs:label xml:lang="en">ascribes property right relation</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3_ascribes_intentional_relation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP66i_is_property_right_relation_ascribed_by">
+    <rdfs:label xml:lang="en">is property right relation ascribed by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:range rdf:resource="ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="ZP3i_is_intentional_relation_ascribed_by"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP67_generated_obligation_upon">
+    <rdfs:label xml:lang="en">generated obligation upon</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE27_Declaration_of_Obligation"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+</rdf:Property>
+    <rdf:Property rdf:about="ZP67i_had_obligation_generated_upon_by">
+    <rdfs:label xml:lang="en">had obligation generated upon by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE27_Declaration_of_Obligation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP68_generated_obligation_to">
+    <rdfs:label xml:lang="en">generated obligation to</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE27_Declaration_of_Obligation"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP68i_had_obligation_generated_to_by">
+    <rdfs:label xml:lang="en">had obligation generated to by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE27_Declaration_of_Obligation"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP69_generated_obligation_of">
+    <rdfs:label xml:lang="en">generated obligation of</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE27_Declaration_of_Obligation"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP69i_had_obligation_generated_of_by">
+    <rdfs:label xml:lang="en">had obligation generated of by</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:range rdf:resource="ZE27_Declaration_of_Obligation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="ZP70_has_social_status_held_in_relation_to">
+    <rdfs:label xml:lang="en">has social status in relation to</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="ZE6_Social_Status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+</rdf:Property>
+<rdf:Property rdf:about="ZP70i_is_related_to_held_social_status">
+    <rdfs:label xml:lang="en">is related to held social status</rdfs:label>
+	<rdfs:comment>
+    </rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:range rdf:resource="ZE6_Social_Status"/>
+</rdf:Property>
+    
+    
+    
+    
+</rdf:RDF>

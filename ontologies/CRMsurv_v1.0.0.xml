@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+
+-->
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="https://takin.solutions/ontologies/CRMsurv/">
+
+<rdfs:Class rdf:about="U1_Archaeological_Survey">
+    <rdfs:label xml:lang="en">Archaeological Survey</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U2_Survey_Collection_Activity">
+    <rdfs:label xml:lang="en">Survey Collection Activity</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U3_Survey_Process_Unit">
+    <rdfs:label xml:lang="en">Survey Process Unit</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U4_Survey_Surface_Unit">
+    <rdfs:label xml:lang="en">Survey Surface Unit</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U5_Digitization_Process_Unit">
+    <rdfs:label xml:lang="en">Digitization Process Unit</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+    <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U6_Material_Sample">
+    <rdfs:label xml:lang="en">Material Sample</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Object"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U7_Fabric">
+    <rdfs:label xml:lang="en">Fabric</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U8_Function">
+    <rdfs:label xml:lang="en">Function</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U9_Ware">
+    <rdfs:label xml:lang="en">Ware</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U10_Shape">
+    <rdfs:label xml:lang="en">Shape</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="U11_Vessel_Part">
+    <rdfs:label xml:lang="en">Vessel Part</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdfs:Class>
+<rdf:Property rdf:about="UP1_has_observation_affecting_parameter">
+    <rdfs:label xml:lang="en">has observation affecting parameter</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP1i_is_observation_affecting_parameter_for">
+    <rdfs:label xml:lang="en">is observation affecting parameter for</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP2_surveyed">
+    <rdfs:label xml:lang="en">surveyed</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U3_Survey_Process_Unit"/>
+    <rdfs:range rdf:resource="U4_Survey_Surface_Unit"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP2i_was_surveyed_by">
+    <rdfs:label xml:lang="en">was surveyed by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U4_Survey_Surface_Unit"/>
+    <rdfs:range rdf:resource="U3_Survey_Process_Unit"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="UP3_collected">
+    <rdfs:label xml:lang="en">collected</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U2_Survey_Collection_Activity"/>
+    <rdfs:range rdf:resource="U6_Material_Sample"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP3i_was_collected_by">
+    <rdfs:label xml:lang="en">was collected by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U6_Material_Sample"/>
+    <rdfs:range rdf:resource="U2_Survey_Collection_Activity"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP4_contains_part_of_type_fabric">
+    <rdfs:label xml:lang="en">contains part of type fabric </rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:range rdf:resource="U7_Fabric"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP4i_part_of_type_fabric_is_contained_by">
+    <rdfs:label xml:lang="en">part of type fabric is contained by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U7_Fabric"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP5_contains_part_of_type_function">
+    <rdfs:label xml:lang="en">contains part of type function</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:range rdf:resource="U8_Function"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP5i_part_of_type_function_is_contained_by">
+    <rdfs:label xml:lang="en">part of type function is contained by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U8_Function"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP6_contains_part_of_type_ware">
+    <rdfs:label xml:lang="en">contains part of type ware</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:range rdf:resource="U9_Ware"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP6i_part_of_type_ware_is_contained_by">
+    <rdfs:label xml:lang="en">part of type ware is contained by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U9_Ware"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP7_contains_part_of_type_shape">
+    <rdfs:label xml:lang="en">contains part of type shape</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:range rdf:resource="U10_Shape"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP7i_part_of_type_shape_is_contained_by">
+    <rdfs:label xml:lang="en">part of type shape is contained by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U10_Shape"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP8_contains_part_of_type_vessel_part">
+    <rdfs:label xml:lang="en">contains part of type vessel part</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:range rdf:resource="U11_Vessel_Part"/>
+</rdf:Property>
+<rdf:Property rdf:about="UP8i_part_of_type_vessel_part_is_contained_by">
+    <rdfs:label xml:lang="en">part of type vessel part is contained by</rdfs:label>
+    <rdfs:comment>
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="U11_Vessel_Part"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+</rdf:Property>
+</rdf:RDF>

@@ -1,0 +1,23 @@
+{
+  "base": "cidoc.xml",
+  "base_name": "Takin.solutions",
+  "extensions": [
+      "linkedart.xml",
+      "linkedart_crm_enhancements.xml",
+      "FRBR2.4-draft.xml",
+      "CRMsci_v1.2.6.xml",
+      "CRMpe_v3.1.1.xml",
+      "CRMgeo_v1.2.1.xml",
+      "CRMdig_v3.2.2.xml",
+      "CRMarchaeo_v1.4.1.xml",
+      "CRMaaa_v0.9.4.6.xml",
+      "CRMinf_v0.7.0.xml",
+      "CRMsurv_v1.0.0.xml",
+      "CIDOC_CRM_v.7.1.1_PC_Extended.xml"
+  ],
+  
+ 
+  "base_version": "7.1.1",
+  "base_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71"
+              
+}
