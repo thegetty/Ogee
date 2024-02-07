@@ -23,6 +23,30 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 
 ## Modeling Examples
 
+### Frida Kahlo Records
+Textual work: http://www.thesemantictakin.com:8000/report/e06d9f9a-7219-402f-b2da-6078bde8ac97 
+Place: http://www.thesemantictakin.com:8000/report/03318362-8f4a-438e-b5b8-e1e8dd9b4258 
+Activity: http://www.thesemantictakin.com:8000/report/d45fab31-24e9-4f88-9d4c-09e807953d03
+Event: http://www.thesemantictakin.com:8000/report/78d6de14-cb7a-4cb0-bf97-90566934c0e0
+Digital object:
+Visual work: http://www.thesemantictakin.com:8000/report/5f316c4c-70a5-4bf6-aca6-70cae99ac286
+Physical object: http://www.thesemantictakin.com:8000/report/40b608de-cf3d-47e8-8162-cdf4012bd9d7
+Person: http://www.thesemantictakin.com:8000/report/d8313dfa-8b69-4d13-943d-2c444b21754a
+Provenance activity: http://www.thesemantictakin.com:8000/report/11ef1f3e-f15c-4838-9110-a718a8ad9527
+Set: http://www.thesemantictakin.com:8000/report/8712c437-ccc7-4cb7-b661-198b67dd20d0
+Group: http://www.thesemantictakin.com:8000/report/4c5897d4-b018-4239-bdb5-3f6e4c1c8b4c
 
+### Irises Records
+Textual work:
+Place: 
+Activity:
+Event:
+Digital Object:
+Visual Work:
+Physical Object:
+Person:
+Provenance Activity:
+Set:
+Group:
 
 
