@@ -43,7 +43,7 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 - Event:
 - Digital Object:
 - Visual Work:
-- Physical Object:
+- Physical Object: http://www.thesemantictakin.com:8000/report/6cdf6c05-9de1-44a9-af27-022dd91ad353
 - Person:
 - Provenance Activity:
 - Set:
