@@ -24,20 +24,10 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 ## Modeling Examples
 
 ### Frida Kahlo Records
-- Textual work: http://www.thesemantictakin.com:8000/report/e06d9f9a-7219-402f-b2da-6078bde8ac97
-- Place: http://www.thesemantictakin.com:8000/report/03318362-8f4a-438e-b5b8-e1e8dd9b4258
-- Activity: http://www.thesemantictakin.com:8000/report/d45fab31-24e9-4f88-9d4c-09e807953d03
-- Event: http://www.thesemantictakin.com:8000/report/78d6de14-cb7a-4cb0-bf97-90566934c0e0
-- Digital object:
-- Visual work: http://www.thesemantictakin.com:8000/report/5f316c4c-70a5-4bf6-aca6-70cae99ac286
-- PHuman-made object: http://www.thesemantictakin.com:8000/report/40b608de-cf3d-47e8-8162-cdf4012bd9d7
-- Person: http://www.thesemantictakin.com:8000/report/d8313dfa-8b69-4d13-943d-2c444b21754a
-- Provenance activity: http://www.thesemantictakin.com:8000/report/11ef1f3e-f15c-4838-9110-a718a8ad9527
-- Set: http://www.thesemantictakin.com:8000/report/8712c437-ccc7-4cb7-b661-198b67dd20d0
-- Group: http://www.thesemantictakin.com:8000/report/4c5897d4-b018-4239-bdb5-3f6e4c1c8b4c
+http://www.thesemantictakin.com:8000/report/21b1486f-a7f1-400a-9eda-9500d23d7f46
 
-### Irises Records
-- Human-made Object: http://www.thesemantictakin.com:8000/report/6cdf6c05-9de1-44a9-af27-022dd91ad353 
-- Person: http://www.thesemantictakin.com:8000/report/83ddd4e6-f374-451c-8c61-95523f16ef5c 
+### Van Gogh Records
+http://www.thesemantictakin.com:8000/report/8dcc01d5-865b-4b9e-9b13-31a8bdfc68df
+
 
 
