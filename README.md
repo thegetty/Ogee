@@ -23,11 +23,11 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 
 ## Modeling Examples
 
-### Frida Kahlo Records
+### Frida Kahlo Example Set of Records
 http://www.thesemantictakin.com:8000/report/21b1486f-a7f1-400a-9eda-9500d23d7f46
 
-### Van Gogh Records
-http://www.thesemantictakin.com:8000/report/8dcc01d5-865b-4b9e-9b13-31a8bdfc68df
-
+### Getty Data Example Set of Records
+[http://www.thesemantictakin.com:8000/report/8dcc01d5-865b-4b9e-9b13-31a8bdfc68df
+](http://www.thesemantictakin.com:8000/report/e8e03e27-db10-4e0d-b654-3d7e95ed4e59)
 
 
