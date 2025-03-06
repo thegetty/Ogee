@@ -16,6 +16,7 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 ## Technical Specifications
 
 - Resource models were originally built for Arches 6.1.0 (https://github.com/archesproject/arches/blob/stable/6.1.0/releases/6.1.0.md)
+- In February 2025, this package was upgraded to be compatible with Arches version 7.6.x. Switch to the "v6" branch if you wish to use this package with Arches version 6.
 - Modeling reflects Linked.Art schema as of December 2023 (https://linked.art/model/). 
 - Github package created based on Arches documentation specifications (https://arches.readthedocs.io/en/stable/installing/projects-and-packages/#understanding-packages)
 - Modeling details and visual examples are available through the Zellij tool, created by Takin.Solutions (https://zellij.pythonanywhere.com/docs/list/apppWYuo1z7E2J7E8?flag=0)
