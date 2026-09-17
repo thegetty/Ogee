@@ -17,18 +17,19 @@ Models are current to the Linked.Art website documentation as of December 2023. 
 
 - Resource models were originally built for Arches 6.1.0 (https://github.com/archesproject/arches/blob/stable/6.1.0/releases/6.1.0.md).
 - In February 2025, this package was upgraded to be compatible with Arches version 7.6.x. Switch to the "v6" branch if you wish to use this package with Arches version 6.
+- In Summer 2026, this package was upgraded to be compatible with Arches version 8.1.x
 - Modeling reflects Linked.Art schema as of December 2023 (https://linked.art/model/). 
 - Github package created based on Arches documentation specifications (https://arches.readthedocs.io/en/stable/installing/projects-and-packages/#understanding-packages)
-- Modeling details and visual examples are available through the Zellij tool, created by Takin.Solutions (https://zellij.pythonanywhere.com/docs/list/apppWYuo1z7E2J7E8?flag=0)
-- Sample instance showing models with example data is hosted by Takin.Solutions (http://www.thesemantictakin.com:8000/index.htm)
+- Modeling details and visual examples are available through the Pletka Semantic Data Documentation Platform, created by Takin.Solutions (https://pletka.io/projects/OGEE)
+- Sample instance showing models with example data is hosted by Takin.Solutions (https://ogee.arches.takin.delving.io)
 
 ## Modeling Examples
 
 ### Frida Kahlo Example Set of Records
-http://www.thesemantictakin.com:8000/report/21b1486f-a7f1-400a-9eda-9500d23d7f46
+https://ogee.arches.takin.delving.io/report/21b1486f-a7f1-400a-9eda-9500d23d7f46
 
 ### Getty Data Example Set of Records
-[http://www.thesemantictakin.com:8000/report/8dcc01d5-865b-4b9e-9b13-31a8bdfc68df
-](http://www.thesemantictakin.com:8000/report/e8e03e27-db10-4e0d-b654-3d7e95ed4e59)
+https://ogee.arches.takin.delving.io/report/8dcc01d5-865b-4b9e-9b13-31a8bdfc68df
+https://ogee.arches.takin.delving.io/report/e8e03e27-db10-4e0d-b654-3d7e95ed4e59)
 
 
