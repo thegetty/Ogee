@@ -5310,4 +5310,102 @@
 <skos:prefLabel xml:lang="en-us">{"id": "37ee2761-13e2-43dc-993d-335bd8527ce6", "value": "System Identifier"}</skos:prefLabel>
 <dcterms:identifier xml:lang="en">{"id": "52fcd715-8645-4051-8421-fe206b2c1020", "value": "http://vocab.getty.edu/aat/300435704"}</dcterms:identifier>
 </skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/1024dada-6013-4aa7-9151-446f435398fd">
+<dcterms:identifier xml:lang="en">{"id": "9c9f6dae-e0ac-4408-b198-a682d5176923", "value": "http://vocab.getty.edu/aat/300404670"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "fff0ca2d-6eca-49f0-a900-9e417272c8c1", "value": "preferred terms"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "76d88b3c-6402-4e70-acd4-830cb528cfea", "value": "Terms or names that are designated among all synonyms or lexical variants for a concept, to be used as the default term or name in displays and other situations; distinguished from \"nonpreferred terms.\""}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/243c2254-27c6-44a7-b9aa-5941de25c461">
+<dcterms:identifier xml:lang="en">{"id": "f46d0c28-66b8-4bb6-8f87-bf444d8e0bd1", "value": "http://vocab.getty.edu/aat/300069682"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "1734b025-aff8-4f92-b571-065a322f5b0a", "value": "assassinations"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "adb51f3c-ce81-42bb-b401-2db1b0c62be5", "value": "Murders of high public officials or other prominent persons, whether by persons acting alone or in conspiracy with others."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/26da3d5f-45b9-4f2c-9b20-2b8fea188ccd">
+<dcterms:identifier xml:lang="en">{"id": "bb09efb2-4cf3-4118-9a8f-f046a139fd5b", "value": "http://vocab.getty.edu/aat/300404626"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "a11948b9-11f9-4e17-9b0e-ffd2ff8b21d6", "value": "identification numbers"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "a364d295-97bc-4832-8ee8-f6c55df98edf", "value": "Numeric, alphanumeric, or other codes assigned to a thing, concept, person, or other entity in order identify it and distinguish it from other similar entities. Often a sequence of integers or characters arbitrarily devised."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/3fda630c-f06f-406c-80fa-48a8e3c619b4">
+<dcterms:identifier xml:lang="en">{"id": "efc9f9f4-2683-4065-9a12-ddefbd8abed0", "value": "http://vocab.getty.edu/aat/300215302"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "963ca683-ee4d-4f89-9fc5-498ce42c06ee", "value": "digital images"}</skos:prefLabel>
+<skos:prefLabel xml:lang="fr">{"id": "1b0f89b5-158c-4ce4-ad77-011571056c3f", "value": "images num\u00e9ris\u00e9es"}</skos:prefLabel>
+<skos:prefLabel xml:lang="pt">{"id": "1a182ae5-aaaa-4f5a-856c-34ebb30bbbff", "value": "imagens digitais"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "43256570-4079-4ef8-90e7-c5e04235317b", "value": "Images created using a binary numerical system electronically stored in the form of encoded picture elements, or pixels."}</skos:scopeNote>
+<skos:scopeNote xml:lang="pt">{"id": "6494272a-da47-440b-b244-23410833747d", "value": "Imagens criadas usando um sistema num\u00e9rico bin\u00e1rio armazenado eletronicamente na forma de elementos de imagem codificados, ou pixels. "}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/4a61c35c-e7cd-43e8-88aa-a7c02e7d4281">
+<dcterms:identifier xml:lang="en">{"id": "34887263-2c96-4e8e-85dc-0aec6ca48bf9", "value": "http://vocab.getty.edu/aat/300418049"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "367d10e3-67a1-4f2e-800b-c0fca099f757", "value": "brief texts"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "91ddd432-2406-4c63-99f8-3254d7157f08", "value": "Documents comprising texts that are relatively short in length, sometimes but not always abbreviated versions of longer texts."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/563449ae-1c1f-49ff-abc5-c18277176b21">
+<dcterms:identifier xml:lang="en">{"id": "a43e8cee-e163-4e26-9b15-353e3f782baa", "value": "http://vocab.getty.edu/aat/300028705"}</dcterms:identifier>
+<skos:prefLabel xml:lang="de">{"id": "7fad4c29-9ba3-4760-a01c-daf21b73c0de", "value": "Unterschrift"}</skos:prefLabel>
+<skos:prefLabel xml:lang="en">{"id": "4adc4b8c-27d7-450f-bdf4-cb5348047f9d", "value": "signatures (names)"}</skos:prefLabel>
+<skos:prefLabel xml:lang="pt">{"id": "e3aca13e-6b52-4af1-bfaf-1951ce588e70", "value": "aut\u00f3grafos"}</skos:prefLabel>
+<skos:scopeNote xml:lang="de">{"id": "9e95d4e4-8973-4141-9d82-5347a87d62b8", "value": "Der eigenh\u00e4ndig geschriebene Name einer Person."}</skos:scopeNote>
+<skos:scopeNote xml:lang="en">{"id": "7a9e8884-918f-4d3f-ad02-55e698beb20a", "value": "Persons' names written in their own hand."}</skos:scopeNote>
+<skos:scopeNote xml:lang="pt">{"id": "4f284e74-50c9-4c2b-97eb-6ec8bb540e8a", "value": "Nomes de pessoas escritos de pr\u00f3prio punho."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/74b3fa4a-df14-4928-9dcf-a26df78c9910">
+<dcterms:identifier xml:lang="en">{"id": "10c2cfcc-48b6-4a56-acf3-3b894a9f5421", "value": "http://vocab.getty.edu/aat/300435420"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "0b370129-94f6-44c7-bf2a-464091b9275b", "value": "mark description"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "301ff755-7bd4-4634-b940-321ef4f74ed7", "value": "An identification or description of the mark type or name; marks are applied to the material or work, not inherent in the material. In the context of art information, an example would be a porcelain mark."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/7f373946-946d-4744-8c9e-28419c573d31">
+<dcterms:identifier xml:lang="en">{"id": "e3fb7fd4-3b31-4b44-af45-885b37382c59", "value": "http://vocab.getty.edu/aat/300237490"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "2e983d05-b872-49de-94f2-4c4e904b60d8", "value": "revolutionaries"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "f23254f7-4000-4f3d-b40a-03b04832e404", "value": "Those engaged in or supporting a revolution, which is a change in established patterns of government or social organization, or those who advocate revolutionary doctrines or principles."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/8f05bbe0-c950-49bb-9e13-dda7d3ae93ed">
+<dcterms:identifier xml:lang="en">{"id": "0ac8dc76-ec8f-4e81-bada-71ae6da0019d", "value": "http://vocab.getty.edu/aat/300000776"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "9c4057bc-f608-4457-ae6d-bfeb9e6e4a51", "value": "states (political divisions)"}</skos:prefLabel>
+<skos:prefLabel xml:lang="fr">{"id": "3008595e-dd20-428b-a47c-73c13df6bcfe", "value": "etats"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "b9be519e-8a57-47cf-b1d5-ccde8bab8950", "value": "The constituent political and administrative units of various nations under a federal system of government, such as Australia and the United States of America."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://localhost:8000/93dbae4f-3804-403e-a26d-ad5e21107ae7">
+<dcterms:identifier xml:lang="en">{"id": "44cda52d-3eb8-4428-8e38-55e5dc9ef596", "value": "http://vocab.getty.edu/aat/300443548"}</dcterms:identifier>
+<skos:prefLabel xml:lang="en">{"id": "2854eceb-e44d-4bca-bd2a-12371534d454", "value": "exhibition spaces"}</skos:prefLabel>
+<skos:scopeNote xml:lang="en">{"id": "99ffa244-6273-42ee-b586-433b12eef432", "value": "Any physically defined areas intended for or devoted to the display of organized, usually named, temporary public displays of works of art, crafts, natural history, science, or other items of cultural interest. Exhibition spaces may be enclosed, in defined outdoor areas, built for this purpose or claimed from structures used for other purposes previously, and may be considered either permanent or temporary."}</skos:scopeNote>
+<skos:inScheme rdf:resource="http://localhost:8000/870f04f5-9133-4161-b110-3d1c99ee39d1"/>
+</skos:Concept>
+<rdf:Description rdf:about="http://localhost:8000/f8a1ec7e-72c0-4dc6-a07d-7b83a61bc937">
+<skos:narrower rdf:resource="http://localhost:8000/26da3d5f-45b9-4f2c-9b20-2b8fea188ccd"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/f8a1ec7e-72c0-4dc6-a07d-7b83a61bc937">
+<skos:narrower rdf:resource="http://localhost:8000/1024dada-6013-4aa7-9151-446f435398fd"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/6169d767-5004-48f2-9989-4b1053ecad16">
+<skos:narrower rdf:resource="http://localhost:8000/74b3fa4a-df14-4928-9dcf-a26df78c9910"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/6169d767-5004-48f2-9989-4b1053ecad16">
+<skos:narrower rdf:resource="http://localhost:8000/4a61c35c-e7cd-43e8-88aa-a7c02e7d4281"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/6169d767-5004-48f2-9989-4b1053ecad16">
+<skos:narrower rdf:resource="http://localhost:8000/563449ae-1c1f-49ff-abc5-c18277176b21"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/feddcce3-907c-41c1-a5da-dc8150d61c8c">
+<skos:narrower rdf:resource="http://localhost:8000/3fda630c-f06f-406c-80fa-48a8e3c619b4"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/6e0190b0-9644-4c93-8f7c-d81a8015c6c8">
+<skos:narrower rdf:resource="http://localhost:8000/93dbae4f-3804-403e-a26d-ad5e21107ae7"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/44a02b53-2725-496f-b300-2a5f30b29d50">
+<skos:narrower rdf:resource="http://localhost:8000/7f373946-946d-4744-8c9e-28419c573d31"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/6e0190b0-9644-4c93-8f7c-d81a8015c6c8">
+<skos:narrower rdf:resource="http://localhost:8000/8f05bbe0-c950-49bb-9e13-dda7d3ae93ed"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://localhost:8000/191eba33-b92a-4966-9ae9-a5c8ba1de383">
+<skos:narrower rdf:resource="http://localhost:8000/243c2254-27c6-44a7-b9aa-5941de25c461"/>
+</rdf:Description>
 </rdf:RDF>
